@@ -11,6 +11,9 @@ from core import models
 
 log = logging.getLogger("hello_newsroom")
 
+def test_sms(request):
+    return render_to_response('core/index.html')
+    
 
 def index(request):
     template_dict = {}
