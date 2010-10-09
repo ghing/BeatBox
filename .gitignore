@@ -3,3 +3,10 @@
 
 # Ignore compiled python files
 *.pyc
+
+# Ignore settings file
+hello_newsroom/configs/common/settings.py
+
+# Ignore Eclipse stuff
+.project
+.pydevproject
