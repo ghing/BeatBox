@@ -5,7 +5,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from datetime import datetime
 from core import models
 import re
-from messaging.messaging import sendMsg, sendSms
+from messaging import sendMsg, sendSms
 
 REGISTER, INCIDENT, NOTIFY, APPROVE = range(4)
 
