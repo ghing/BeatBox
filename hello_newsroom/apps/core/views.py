@@ -43,7 +43,7 @@ def mobile_register(request):
         fCellNum = request.POST.get('fCellNum','')
         print fUsername
         beat = models.CpdBeats.objects.get(beat_num=fBeatNum)
-        thisuser = models.User.objects.create_user(username=fUsername, password=fPass)
+        thisuser = models.User.objects.create_user(username=fUsername, password=fPass, email='a@a.com')
         beatuser = models.BeatUser(user=thisuser, cpdBeatIntersection=beat, cellNum = fCellNum)
         beatuser.save()
 
