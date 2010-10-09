@@ -9,6 +9,7 @@ from django.http import HttpResponseRedirect
 
 
 from core import models
+from messaging import *
 
 log = logging.getLogger("hello_newsroom")
 
