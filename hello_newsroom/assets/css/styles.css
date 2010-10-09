@@ -1,0 +1,58 @@
+/*BEGIN STRUCTURE*/
+body
+{background-color:#ebebdf; color:#000000; font-family: Helvetica,sans-serif;}
+
+#container
+{border: 2px solid #000000;}
+
+.header
+{height:auto; margin-bottom: 10px;}
+
+#main
+{background-color:#ffffff; padding: 15px; }
+
+textarea
+{width:200px; height:200px; padding:5px; border:1px solid #aaa;}
+
+/*BEGIN TYPOGRAPHY*/
+
+h1
+{font-size: 30px; margin: 10px 0 20px;}
+
+h2
+{font-size: 24px; margin: 10px 0 20px;}
+
+.text
+{font-size: 14px; display:block; margin-bottom:5px; font-weight:bold;}
+
+.menu
+{font-size: 14px; display:block; margin-bottom:5px; font-weight:bold;}
+
+.checkbox
+{display:block; margin-bottom:5px; font-weight:bold;}
+
+.tip
+{color:#888; font-size:12px;}
+
+/*BEGIN FORM STYLES*/
+input
+{margin:0; padding:0;}
+
+.body
+{width:200px; padding:5px; border:2px solid #0d506e;}
+
+#crime
+{border:2px solid #0d506e;}
+
+#location
+{border:2px solid #0d506e;}
+
+.btn
+{width:212px; margin-bottom:10px; padding:10px 0; border:2px solid #000000; background-color:#0d506e; color:#fff; font-size:18px; font-weight:bold; -webkit-appearance: none;}
+
+.btn:hover
+{border:2px solid #0d506e; background-color:#000000; color:#fff;}
+
+.clear
+{clear:both;}
+
