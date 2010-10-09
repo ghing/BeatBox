@@ -24,3 +24,8 @@ def index(request):
     template_dict['beatuser'] = beatuser    
     return render_to_response('core/index.html', template_dict)
 
+def mobile_index(request):
+    template_dict = {}
+    
+    return render_to_response('user-screen.html', tempalte_dict)
+
