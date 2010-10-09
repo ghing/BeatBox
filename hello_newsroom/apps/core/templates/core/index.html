@@ -1,0 +1,325 @@
+{% load core %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="{% build_media_url '/site_media/hello_newsroom.css' %}" type="text/css" media="screen" title="no title" charset="utf-8">
+    <title>intersections</title>
+    <script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+    {% gmap %}
+    <script type="text/javascript" charset="utf-8">
+        function geocode(form) {
+            geocoder.getLocations($("#query").val, handle_geocode);
+            
+        }
+        var drawnNeigh=false;
+        var neighborhoods;
+        var geoxml_dos = null;
+        var geoxml = null;
+        var geoxml_cinco = null;
+        var geoxml_tres = null;
+        var geoxml_seis = null;
+        var geoxml_cuatro = null;
+		var the_url = '';
+		var the_url_dos = '';
+		var the_url_tres = '';
+		var the_url_cuatro = '';
+		var the_url_cinco = '';
+		var the_url_seis = '';
+        function handle_geocode(gc_result) {
+            if (gc_result.Status.code != 200 || gc_result.Placemark.length == 0) {
+                $("#message").html("No locations found for your search.");
+                return false;
+            }
+            if (gc_result.Placemark.length > 1) {
+                display_alternatives(gc_result.Placemark);
+                return false;
+            }
+            // exactly one hit
+            placemark = gc_result.Placemark[0];
+            $("#address_input").val(placemark.address); // pass back the normalized address
+            $("#geocode_input").val(placemark.Point.coordinates);
+            var form = document.getElementById('the_form');
+            form.submit();
+        }
+
+        function geocode(form) {
+            $("#message").html("");
+            var addr_elem = document.getElementById('query_input');
+            window.geocoder.getLocations(addr_elem.value, handle_geocode);
+            return false;
+        }
+
+        function click_handler(loc) {
+            // return a closure 
+            return function() {
+                $("#query_input").val(loc.address);
+                $("#the_form").submit();
+                return false;
+            }
+        }
+
+        function display_alternatives(locations) {
+            $("#multiple-locations").html('');
+            window.stash = locations;
+            for (var i = 0; i < locations.length; i++) {
+                var node = document.createElement('a');
+                $(node).attr("href","#");
+                $(node).text(locations[i].address).addClass('alternative-location');
+                $(node).click(click_handler(locations[i]));
+                $("#multiple-locations").append(node);
+            }
+        }
+
+        function init_geocoder() {
+            var bounds = new GLatLngBounds();
+            bounds.extend(new GLatLng(36.969971899999997,-91.513518300000001)); // SW IL BB
+            bounds.extend(new GLatLng(42.508347900000004,-87.495213899999996)); // NE IL BB
+            window.geocoder = new GClientGeocoder();
+            window.geocoder.setViewport(bounds); // prefer results within Illinois
+        }
+
+        function init() {
+            init_geocoder();
+            $("#the_form").bind("submit", geocode);
+        }
+        $(document).ready(init);
+        var gmap = null;
+        {% if point %}
+        TRAIN_ICON = new GIcon(G_DEFAULT_ICON, "{% build_media_url '/site_media/train.png' %}")
+        function init_map() {
+            if (GBrowserIsCompatible()) {
+                var center = {{point.geojson|safe}};
+                gmap = new GMap2(document.getElementById("map"));
+                add_google_marker(gmap,center,'{{ address|safe }}')
+                var lon = center['coordinates'][0];
+                var lat = center['coordinates'][1];
+                gmap.setCenter(new GLatLng(lat,lon), 10);
+                gmap.setMapType(G_PHYSICAL_MAP);
+                gmap.enableDoubleClickZoom();
+                gmap.enableContinuousZoom();
+                gmap.enableScrollWheelZoom();
+                gmap.setZoom(14);
+
+                //start subsection displays
+                {% if community_area %}
+                the_url = '{% url_prefix %}{% url comm_area_kml community_area.area_number %}';
+                geoxml =  addLayer(the_url);              
+                {% endif %}
+
+                {% if cpdareas %}
+                the_url_seis = '{% url_prefix %}{% url cpdarea_kml cpdareas.area_num%}';
+                {% endif %}
+
+                {% if cpdbeats %}
+                the_url_cuatro = '{% url_prefix %}{% url cpdbeat_kml cpdbeats.objectid %}';
+                {% endif %} 
+
+				{% if neighborhood %}
+                the_url_dos = '{% url_prefix %}{% url neighborhood_kml neighborhood.pri_neigh %}';
+                {% endif %} 
+
+                {% if wards %}
+                the_url_cinco = '{% url_prefix %}{% url wards_kml wards.ward %}';
+                {% endif %}
+
+                {% if cpddistrict %}
+                the_url_tres = '{% url_prefix %}{% url cpddistrict_kml cpddistrict.dist_label %}';
+                
+                
+                {% endif %}
+				
+            }
+        }
+
+
+               
+                
+
+
+		function addLayer(url){
+            ggxml= new GGeoXml(url);
+            GEvent.addListener(ggxml, "load", function() {
+                if (this.loadedCorrectly()){
+                    gmap.addOverlay(this);
+                } else {
+                    GLog.write("didn't load correctly!");
+                    GLog.writeUrl(url);
+                }
+            });
+			return ggxml;
+		}
+            
+        
+
+        function toggleXmlUno(){
+                if(the_url!= '' && geoxml == null){
+			geoxml = addLayer(the_url);
+			document.getElementById("xmlButtonUno").value="Hide Community Area";
+		}
+                else if(geoxml != null){
+                    gmap.removeOverlay(geoxml);
+		    geoxml = null;
+		    document.getElementById("xmlButtonUno").value="Show Community Area";
+                }
+        }
+        function toggleXmlDos(){
+                if(the_url_dos!= '' && geoxml_dos == null){
+			geoxml_dos = addLayer(the_url_dos);
+			document.getElementById("xmlButtonDos").value="Hide Neighborhood";
+		}
+                else if(geoxml_dos != null){
+                    gmap.removeOverlay(geoxml_dos);
+		    geoxml_dos = null;
+		    document.getElementById("xmlButtonDos").value="Show Neighborhood";
+                }
+        }
+       function toggleXmlTres(){
+		if(the_url_tres!= '' && geoxml_tres == null){
+			geoxml_tres = addLayer(the_url_tres);
+			document.getElementById("xmlButtonTres").value="Hide police district";
+		}
+                else if(geoxml_tres != null){
+                    gmap.removeOverlay(geoxml_tres);
+		    geoxml_tres = null;
+		    document.getElementById("xmlButtonTres").value="Show police district";
+                }
+        }
+       function toggleXmlCuatro(){
+                if(the_url_cuatro!= '' && geoxml_cuatro== null){
+			geoxml_cuatro = addLayer(the_url_cuatro);
+			document.getElementById("xmlButtonCuatro").value="Hide police beat";
+		}
+                else if(geoxml_cuatro != null){
+                    gmap.removeOverlay(geoxml_cuatro);
+		    geoxml_cuatro = null;
+		    document.getElementById("xmlButtonCuatro").value="Show police beat";
+                }
+        }
+       function toggleXmlCinco(){
+
+                if(the_url_cinco!= '' && geoxml_cinco== null){
+			geoxml_cinco = addLayer(the_url_cinco);
+			document.getElementById("xmlButtonCinco").value="Hide ward";
+		}
+                else if(geoxml_cinco != null){
+                    gmap.removeOverlay(geoxml_cinco);
+		    geoxml_cinco = null;
+		    document.getElementById("xmlButtonCinco").value="Show ward";
+                }
+        }
+       function toggleXmlSeis(){
+                if(the_url_seis!= '' && geoxml_seis== null){
+			geoxml_seis = addLayer(the_url_seis);
+			document.getElementById("xmlButtonSeis").value="Show police area";
+		}
+                else if(geoxml_seis != null){
+                    gmap.removeOverlay(geoxml_seis);
+		    geoxml_seis = null;
+		    document.getElementById("xmlButtonSeis").value="Hide police area";
+                }
+        }
+
+
+        function add_google_marker(gmap,point,label,icon) {
+            if (icon == null) {
+                icon = G_DEFAULT_ICON;
+            }
+            var lon = point['coordinates'][0]
+            var lat = point['coordinates'][1]
+            var gicon = icon;
+            var opts = { 'icon': gicon, 'title': label }
+            var marker = new GMarker(new GLatLng(lat,lon),opts);
+            gmap.addOverlay(marker);
+            return marker;
+        }
+
+        $(document).ready(init_map);
+        {% endif %}
+
+    </script>
+</head>
+
+<body>
+    <h1>Wondering what areas overlap an dwelling?</h1>
+    * After you search click on the maps for more information.
+
+
+        <div id="content">
+<form id="the_form" action="{% url search %}">
+    <label for="query_input">Enter an address:</label> <input size="40" type="text" id="query_input" name="query" value="{{query|default:''}}">
+    <input type="hidden" id="address_input" name="address" />
+    <input type="hidden" id="geocode_input" name="geocode" />
+    <input type="submit" value="Go!"/>
+    <div class="error" id="message"></div>
+</form>
+<div id="multiple-locations">
+</div>
+{% if address %}
+{% if point %}
+<div id="map"></div>
+{% endif %}
+
+{% if remainder %}<h2>Did you mean?</h2>
+<ul>
+{% for hit in remainder %}
+<li><a href="{% url search %}?query={{hit.0}}">{{hit.0}}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
+<B>Your search is within....</B><br>
+{% if community_area %}
+<p>The<b> {{ community_area.community }} </b>community area. <button type="button" id="xmlButtonUno" onclick="toggleXmlUno()">Hide community area</button> </p>
+{% else %}
+<p><em>{{ address}}</em> could not be located within any of Chicago's 77 community areas.</p>
+{% endif %}
+
+
+{% if neighborhood %}
+<p><b> {{ neighborhood.pri_neigh}} </b> neighborhood. <button type="button" id="xmlButtonDos" onclick="toggleXmlDos()">Show neighorhood</button> </p>
+
+{% else %}
+<p><em>{{ address}}</em> could not be located within any of Chicago's neighborhoods.</p>
+{% endif %}
+
+{% if cpddistrict %}
+<p>The <b> {{ cpddistrict.dist_label }}</b> police <a href='https://portal.chicagopolice.org/portal/page/portal/ClearPath/Communities/Districts'>district.</a>  <button type="button" id="xmlButtonTres" onclick="toggleXmlTres()">Show police district</button> </p>
+
+{% else %}
+<p><em>{{ address}}</em> could not be located within any of Chicago's police districts.</p>
+{% endif %}
+
+
+{% if cpdbeats %}
+<p>Police beat<b> {{ cpdbeats.beat }} </b>. <button type="button" id="xmlButtonCuatro" onclick="toggleXmlCuatro()">Show police beat</button> </p>
+
+{% else %}
+<p><em>{{ address}}</em> could not be located within any of Chicago's police beats.</p>
+{% endif %}
+
+
+{% if wards %}
+<p>Ward <b> {{ wards.ward }} </b>.<button type="button" id="xmlButtonCinco" onclick="toggleXmlCinco()">Show ward</button> </p>
+
+{% else %}
+<p><em>{{ address}}</em> could not be located within any of Chicago's wards.</p>
+{% endif %}
+
+
+{% if cpdareas %}
+<p>Police area <b> {{ cpdareas.area_num }} </b>. <button type="button" id="xmlButtonSeis" onclick="toggleXmlSeis()">Show police area</button> </p>
+
+{% else %}
+<p><em>{{ address}}</em> could not be located within any of Chicago's police areas.</p>
+{% endif %}
+
+
+
+{% endif %}
+</div>
+
+</body>
+</html>

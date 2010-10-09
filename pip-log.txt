@@ -1,0 +1,732 @@
+Downloading/unpacking django-debug-toolbar (from -r requirements.txt (line 4))
+  Getting page http://pypi.python.org/simple/django-debug-toolbar
+  URLs to search for versions for django-debug-toolbar (from -r requirements.txt (line 4)):
+  * http://pypi.python.org/simple/django-debug-toolbar
+  Getting page http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/
+  Getting page http://github.com/robhudson/django-debug-toolbar/downloads
+  Getting page http://robhudson.github.com/django-debug-toolbar/
+  Analyzing links from page http://pypi.python.org/simple/django-debug-toolbar/
+    Found link http://pypi.python.org/packages/source/d/django-debug-toolbar/django-debug-toolbar-0.8.3.tar.gz#md5=d40d7d462172e41bbfdc69f0182bd91b (from http://pypi.python.org/simple/django-debug-toolbar/), version: 0.8.3
+    Found link http://pypi.python.org/packages/source/d/django-debug-toolbar/django-debug-toolbar-0.8.0.tar.gz#md5=5e0b07f22e5d298b4fbd38855c520d33 (from http://pypi.python.org/simple/django-debug-toolbar/), version: 0.8.0
+    Found link http://pypi.python.org/packages/source/d/django-debug-toolbar/django-debug-toolbar-0.8.2.tar.gz#md5=1efcb165dd592159d6ce3f29b90ae168 (from http://pypi.python.org/simple/django-debug-toolbar/), version: 0.8.2
+    Found link http://pypi.python.org/packages/source/d/django-debug-toolbar/django-debug-toolbar-0.7.0.tar.gz#md5=f8b8a1586e69baaef761423913f1b225 (from http://pypi.python.org/simple/django-debug-toolbar/), version: 0.7.0
+    Found link http://pypi.python.org/packages/source/d/django-debug-toolbar/django-debug-toolbar-0.8.1.tar.gz#md5=6b18cdb479d9414beb9c378779ffd8d1 (from http://pypi.python.org/simple/django-debug-toolbar/), version: 0.8.1
+    Skipping link http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/ (from http://pypi.python.org/simple/django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/downloads (from http://pypi.python.org/simple/django-debug-toolbar/); not a file
+    Skipping link http://robhudson.github.com/django-debug-toolbar/ (from http://pypi.python.org/simple/django-debug-toolbar/); not a file
+    Skipping link http://code.google.com/p/django-debug-toolbar/issues/list (from http://pypi.python.org/simple/django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/issues (from http://pypi.python.org/simple/django-debug-toolbar/); not a file
+  Analyzing links from page http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/
+    Skipping link http://www.myopenid.com/server (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://robhudson.myopenid.com/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://robhudson.myopenid.com (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://s3.amazonaws.com/cogit8-org/css/style.min.css?v42c95ee6 (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); unknown archive format: .css
+    Skipping link http://rob.cogit8.org/feeds/blog/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/blog/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/links/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/tracks/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/photos/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/contact/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://www.symfony-project.org/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://www.symfony-project.org/blog/2008/08/27/new-in-symfony-1-2-customize-the-web-debug-toolbar (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tree/master (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://djangocon.org/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://www.iamcal.com/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://www.youtube.com/watch?v=i6Fr65PFqfk (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://pownce.com/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://twitter.com/robhudson/statuses/912855225 (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://blog.howiworkdaily.com/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://thisweekindjango.com/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://twitter.com/twiderrific/statuses/912857714 (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://github.com/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://twitter.com/zeeg/statuses/913468142 (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://www.davidcramer.net/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://twitter.com/zeeg (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://git.or.cz/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tree/master/README.rst (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); unknown archive format: .rst
+    Skipping link http://code.google.com/p/django-debug-toolbar/issues/list (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/tag/debug/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/tag/django/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/blog/2008/Aug/31/using-gmails-smtp-server-django/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/blog/2008/Oct/29/a-django-management-command-for-amazon-s3/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://cogit8.disqus.com/?url=ref (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://disqus.com (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://delicious.com/robhudson (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://www.flickr.com/photos/95363333@N00/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://www.last.fm/user/robhudson/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/blog/archive/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://rob.cogit8.org/feeds/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://www.linkedin.com/in/robhudson (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://www.twitter.com/robhudson (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://djangopeople.net/robhudson/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+    Skipping link http://97bottles.com/people/robhudson/ (from http://rob.cogit8.org/blog/2008/Sep/19/introducing-django-debug-toolbar/); not a file
+  Analyzing links from page http://github.com/robhudson/django-debug-toolbar/downloads
+    Skipping link http://github.com/opensearch.xml (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .xml
+    Skipping link http://github.com/fluidicon.png (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .png
+    Skipping link http://assets0.github.com/stylesheets/bundle_common.css?2f7e714f544c24700e52868163f325fbc5239a18 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .css
+    Skipping link http://assets3.github.com/stylesheets/bundle_github.css?2f7e714f544c24700e52868163f325fbc5239a18 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .css
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commits/master.atom (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .atom
+    Skipping link http://github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/search (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/plans (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/explore (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/blog (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link https://github.com/login (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link https://github.com/robhudson/django-debug-toolbar/edit (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/toggle_watch (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/fork (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/downloads (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/pull_request/ (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/watchers (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/network (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tree/master (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commits/master (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/issues (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://wiki.github.com/robhudson/django-debug-toolbar/ (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/graphs (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.3 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .3
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.3 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .3
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/7ba80e06bc6302593d77be6be3242e37b071a46b (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.2 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .2
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.2 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .2
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/55b5a77a56cc04f349dde7c71d0f5bf2d76e0405 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.1 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .1
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.1 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .1
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/34bd73e5cdccce0d7e9cc76b033581e4fdd98ced (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/4f43c9b1004bac18e5323e52c4fb110fd4f2b2ba (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.7.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.7.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/04fc096d6b90704d706f4301c846306b068cbb31 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://support.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/training (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/contact (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://develop.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://status.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://twitter.com/github (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://help.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/security (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/site/terms (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/site/privacy (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspace.com%20 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspacecloud.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspace.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+  Analyzing links from page http://robhudson.github.com/django-debug-toolbar/
+    Skipping link http://github.com/robhudson/django-debug-toolbar (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://pixane.com/ (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://pypi.python.org/pypi/pip (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://git-scm.com (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/blob/master/README.rst (from http://robhudson.github.com/django-debug-toolbar/); unknown archive format: .rst
+    Skipping link http://groups.google.com/group/django-debug-toolbar (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://www.transifex.net/projects/p/django-debug-toolbar/ (from http://robhudson.github.com/django-debug-toolbar/); not a file
+  Analyzing links from page http://github.com/robhudson/django-debug-toolbar/downloads
+    Skipping link http://github.com/opensearch.xml (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .xml
+    Skipping link http://github.com/fluidicon.png (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .png
+    Skipping link http://assets0.github.com/stylesheets/bundle_common.css?2f7e714f544c24700e52868163f325fbc5239a18 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .css
+    Skipping link http://assets3.github.com/stylesheets/bundle_github.css?2f7e714f544c24700e52868163f325fbc5239a18 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .css
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commits/master.atom (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .atom
+    Skipping link http://github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/search (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/plans (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/explore (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/blog (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link https://github.com/login (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link https://github.com/robhudson/django-debug-toolbar/edit (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/toggle_watch (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/fork (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/downloads (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/pull_request/ (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/watchers (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/network (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tree/master (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commits/master (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/issues (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://wiki.github.com/robhudson/django-debug-toolbar/ (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/graphs (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.3 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .3
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.3 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .3
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/7ba80e06bc6302593d77be6be3242e37b071a46b (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.2 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .2
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.2 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .2
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/55b5a77a56cc04f349dde7c71d0f5bf2d76e0405 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.1 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .1
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.1 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .1
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/34bd73e5cdccce0d7e9cc76b033581e4fdd98ced (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/4f43c9b1004bac18e5323e52c4fb110fd4f2b2ba (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.7.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.7.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/04fc096d6b90704d706f4301c846306b068cbb31 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://support.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/training (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/contact (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://develop.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://status.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://twitter.com/github (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://help.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/security (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/site/terms (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/site/privacy (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspace.com%20 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspacecloud.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspace.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+  Analyzing links from page http://robhudson.github.com/django-debug-toolbar/
+    Skipping link http://github.com/robhudson/django-debug-toolbar (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://pixane.com/ (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://pypi.python.org/pypi/pip (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://git-scm.com (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/blob/master/README.rst (from http://robhudson.github.com/django-debug-toolbar/); unknown archive format: .rst
+    Skipping link http://groups.google.com/group/django-debug-toolbar (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://www.transifex.net/projects/p/django-debug-toolbar/ (from http://robhudson.github.com/django-debug-toolbar/); not a file
+  Analyzing links from page http://github.com/robhudson/django-debug-toolbar/downloads
+    Skipping link http://github.com/opensearch.xml (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .xml
+    Skipping link http://github.com/fluidicon.png (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .png
+    Skipping link http://assets0.github.com/stylesheets/bundle_common.css?2f7e714f544c24700e52868163f325fbc5239a18 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .css
+    Skipping link http://assets3.github.com/stylesheets/bundle_github.css?2f7e714f544c24700e52868163f325fbc5239a18 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .css
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commits/master.atom (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .atom
+    Skipping link http://github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/search (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/plans (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/explore (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/blog (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link https://github.com/login (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link https://github.com/robhudson/django-debug-toolbar/edit (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/toggle_watch (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/fork (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/downloads (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/pull_request/ (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/watchers (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/network (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tree/master (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commits/master (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/issues (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://wiki.github.com/robhudson/django-debug-toolbar/ (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/graphs (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.3 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .3
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.3 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .3
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/7ba80e06bc6302593d77be6be3242e37b071a46b (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.2 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .2
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.2 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .2
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/55b5a77a56cc04f349dde7c71d0f5bf2d76e0405 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.1 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .1
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.1 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .1
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/34bd73e5cdccce0d7e9cc76b033581e4fdd98ced (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/4f43c9b1004bac18e5323e52c4fb110fd4f2b2ba (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.7.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.7.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/04fc096d6b90704d706f4301c846306b068cbb31 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://support.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/training (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/contact (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://develop.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://status.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://twitter.com/github (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://help.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/security (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/site/terms (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/site/privacy (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspace.com%20 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspacecloud.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspace.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+  Analyzing links from page http://robhudson.github.com/django-debug-toolbar/
+    Skipping link http://github.com/robhudson/django-debug-toolbar (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://pixane.com/ (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://pypi.python.org/pypi/pip (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://git-scm.com (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/blob/master/README.rst (from http://robhudson.github.com/django-debug-toolbar/); unknown archive format: .rst
+    Skipping link http://groups.google.com/group/django-debug-toolbar (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://www.transifex.net/projects/p/django-debug-toolbar/ (from http://robhudson.github.com/django-debug-toolbar/); not a file
+  Analyzing links from page http://github.com/robhudson/django-debug-toolbar/downloads
+    Skipping link http://github.com/opensearch.xml (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .xml
+    Skipping link http://github.com/fluidicon.png (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .png
+    Skipping link http://assets0.github.com/stylesheets/bundle_common.css?2f7e714f544c24700e52868163f325fbc5239a18 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .css
+    Skipping link http://assets3.github.com/stylesheets/bundle_github.css?2f7e714f544c24700e52868163f325fbc5239a18 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .css
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commits/master.atom (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .atom
+    Skipping link http://github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/search (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/plans (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/explore (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/blog (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link https://github.com/login (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link https://github.com/robhudson/django-debug-toolbar/edit (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/toggle_watch (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/fork (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/downloads (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/pull_request/ (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/watchers (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/network (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tree/master (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commits/master (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/issues (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://wiki.github.com/robhudson/django-debug-toolbar/ (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/graphs (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.3 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .3
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.3 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .3
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/7ba80e06bc6302593d77be6be3242e37b071a46b (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.2 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .2
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.2 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .2
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/55b5a77a56cc04f349dde7c71d0f5bf2d76e0405 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.1 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .1
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.1 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .1
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/34bd73e5cdccce0d7e9cc76b033581e4fdd98ced (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/4f43c9b1004bac18e5323e52c4fb110fd4f2b2ba (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.7.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.7.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/04fc096d6b90704d706f4301c846306b068cbb31 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://support.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/training (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/contact (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://develop.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://status.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://twitter.com/github (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://help.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/security (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/site/terms (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/site/privacy (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspace.com%20 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspacecloud.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspace.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+  Analyzing links from page http://robhudson.github.com/django-debug-toolbar/
+    Skipping link http://github.com/robhudson/django-debug-toolbar (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://pixane.com/ (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://pypi.python.org/pypi/pip (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://git-scm.com (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/blob/master/README.rst (from http://robhudson.github.com/django-debug-toolbar/); unknown archive format: .rst
+    Skipping link http://groups.google.com/group/django-debug-toolbar (from http://robhudson.github.com/django-debug-toolbar/); not a file
+    Skipping link http://www.transifex.net/projects/p/django-debug-toolbar/ (from http://robhudson.github.com/django-debug-toolbar/); not a file
+  Analyzing links from page http://github.com/robhudson/django-debug-toolbar/downloads
+    Skipping link http://github.com/opensearch.xml (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .xml
+    Skipping link http://github.com/fluidicon.png (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .png
+    Skipping link http://assets0.github.com/stylesheets/bundle_common.css?2f7e714f544c24700e52868163f325fbc5239a18 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .css
+    Skipping link http://assets3.github.com/stylesheets/bundle_github.css?2f7e714f544c24700e52868163f325fbc5239a18 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .css
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commits/master.atom (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .atom
+    Skipping link http://github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/search (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/plans (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/explore (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/blog (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link https://github.com/login (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link https://github.com/robhudson/django-debug-toolbar/edit (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/toggle_watch (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/fork (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/downloads (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/pull_request/ (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/watchers (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/network (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tree/master (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commits/master (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/issues (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://wiki.github.com/robhudson/django-debug-toolbar/ (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/graphs (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.3 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .3
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.3 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .3
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/7ba80e06bc6302593d77be6be3242e37b071a46b (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.2 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .2
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.2 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .2
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/55b5a77a56cc04f349dde7c71d0f5bf2d76e0405 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.1 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .1
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.1 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .1
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/34bd73e5cdccce0d7e9cc76b033581e4fdd98ced (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.8.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.8.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/4f43c9b1004bac18e5323e52c4fb110fd4f2b2ba (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/robhudson/django-debug-toolbar/tarball/0.7.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/zipball/0.7.0 (from http://github.com/robhudson/django-debug-toolbar/downloads); unknown archive format: .0
+    Skipping link http://github.com/robhudson/django-debug-toolbar/commit/04fc096d6b90704d706f4301c846306b068cbb31 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://support.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/training (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/contact (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://develop.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://status.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://twitter.com/github (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://help.github.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/security (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/site/terms (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://github.com/site/privacy (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspace.com%20 (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspacecloud.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+    Skipping link http://www.rackspace.com (from http://github.com/robhudson/django-debug-toolbar/downloads); not a file
+  Using version 0.8.3 (newest of versions: 0.8.3, 0.8.2, 0.8.1, 0.8.0, 0.7.0)
+  Downloading from URL http://pypi.python.org/packages/source/d/django-debug-toolbar/django-debug-toolbar-0.8.3.tar.gz#md5=d40d7d462172e41bbfdc69f0182bd91b (from http://pypi.python.org/simple/django-debug-toolbar/)
+  Running setup.py egg_info for package django-debug-toolbar
+    running egg_info
+    creating pip-egg-info/django_debug_toolbar.egg-info
+    writing pip-egg-info/django_debug_toolbar.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/django_debug_toolbar.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/django_debug_toolbar.egg-info/dependency_links.txt
+    writing manifest file 'pip-egg-info/django_debug_toolbar.egg-info/SOURCES.txt'
+    warning: manifest_maker: standard file '-c' not found
+    reading manifest file 'pip-egg-info/django_debug_toolbar.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'pip-egg-info/django_debug_toolbar.egg-info/SOURCES.txt'
+  Source in ./build/django-debug-toolbar has version 0.8.3, which satisfies requirement django-debug-toolbar (from -r requirements.txt (line 4))
+Requirement already satisfied: psycopg2 in /usr/lib/python2.6/dist-packages (from -r requirements.txt (line 5))
+Exception:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 252, in main
+    self.run(options, args)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 408, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1721, in install_files
+    if req_to_install.check_if_exists():
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1583, in check_if_exists
+    dist = pkg_resources.get_distribution(self.req)
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 292, in get_distribution
+    if isinstance(dist,Requirement): dist = get_provider(dist)
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 176, in get_provider
+    return working_set.find(moduleOrReq) or require(str(moduleOrReq))[0]
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 436, in find
+    raise VersionConflict(dist,req)     # XXX add more info
+VersionConflict: (Django 1.2.1 (/usr/local/lib/python2.6/dist-packages), Requirement.parse('Django==1.1'))
+------------------------------------------------------------
+/usr/bin/pip run on Sat Jul  3 16:25:52 2010
+Downloading/unpacking django-debug-toolbar (from -r requirements.txt (line 4))
+  Running setup.py egg_info for package django-debug-toolbar
+    running egg_info
+    writing pip-egg-info/django_debug_toolbar.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/django_debug_toolbar.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/django_debug_toolbar.egg-info/dependency_links.txt
+    warning: manifest_maker: standard file '-c' not found
+    reading manifest file 'pip-egg-info/django_debug_toolbar.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'pip-egg-info/django_debug_toolbar.egg-info/SOURCES.txt'
+  Source in ./build/django-debug-toolbar has version 0.8.3, which satisfies requirement django-debug-toolbar (from -r requirements.txt (line 4))
+Requirement already satisfied: psycopg2 in /usr/lib/python2.6/dist-packages (from -r requirements.txt (line 5))
+Exception:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 252, in main
+    self.run(options, args)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 408, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1721, in install_files
+    if req_to_install.check_if_exists():
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1583, in check_if_exists
+    dist = pkg_resources.get_distribution(self.req)
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 292, in get_distribution
+    if isinstance(dist,Requirement): dist = get_provider(dist)
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 176, in get_provider
+    return working_set.find(moduleOrReq) or require(str(moduleOrReq))[0]
+  File "/usr/lib/python2.6/dist-packages/pkg_resources.py", line 436, in find
+    raise VersionConflict(dist,req)     # XXX add more info
+VersionConflict: (Django 1.2.1 (/usr/local/lib/python2.6/dist-packages), Requirement.parse('Django==1.1'))
+------------------------------------------------------------
+/usr/bin/pip run on Sat Jul  3 16:26:34 2010
+Downloading/unpacking django-debug-toolbar (from -r requirements.txt (line 4))
+  Running setup.py egg_info for package django-debug-toolbar
+    running egg_info
+    writing pip-egg-info/django_debug_toolbar.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/django_debug_toolbar.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/django_debug_toolbar.egg-info/dependency_links.txt
+    warning: manifest_maker: standard file '-c' not found
+    reading manifest file 'pip-egg-info/django_debug_toolbar.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'pip-egg-info/django_debug_toolbar.egg-info/SOURCES.txt'
+  Source in ./build/django-debug-toolbar has version 0.8.3, which satisfies requirement django-debug-toolbar (from -r requirements.txt (line 4))
+Requirement already satisfied: psycopg2 in /usr/lib/python2.6/dist-packages (from -r requirements.txt (line 5))
+Requirement already satisfied: Django==1.2.1 in /usr/local/lib/python2.6/dist-packages (from -r requirements.txt (line 2))
+Downloading/unpacking python-memcached (from -r requirements.txt (line 6))
+  Getting page http://pypi.python.org/simple/python-memcached
+  URLs to search for versions for python-memcached (from -r requirements.txt (line 6)):
+  * http://pypi.python.org/simple/python-memcached
+  Getting page http://www.tummy.com/Community/software/python-memcached/
+  Skipping page ftp://ftp.tummy.com/pub/python-memcached/old-releases/python-memcached-1.45.tar.gz (from http://pypi.python.org/simple/python-memcached/) because of Content-Type: 
+  Skipping page ftp://ftp.tummy.com/pub/python-memcached/python-memcached-1.40.tar.gz (from http://pypi.python.org/simple/python-memcached/) because of Content-Type: 
+  Skipping page ftp://ftp.tummy.com/pub/python-memcached/old-releases/python-memcached-1.44.tar.gz (from http://pypi.python.org/simple/python-memcached/) because of Content-Type: 
+  Skipping page ftp://ftp.tummy.com/pub/python-memcached/python-memcached-1.43.tar.gz (from http://pypi.python.org/simple/python-memcached/) because of Content-Type: 
+  Skipping page ftp://ftp.tummy.com/pub/python-memcached/python-memcached-1.42.tar.gz (from http://pypi.python.org/simple/python-memcached/) because of Content-Type: 
+  Skipping page ftp://ftp.tummy.com/pub/python-memcached/python-memcached-1.41.tar.gz (from http://pypi.python.org/simple/python-memcached/) because of Content-Type: 
+  Getting page ftp://ftp.tummy.com/pub/python-memcached/
+  Skipping page ftp://ftp.tummy.com/pub/python-memcached/python-memcached-latest.tar.gz (from http://pypi.python.org/simple/python-memcached/) because of Content-Type: 
+  Analyzing links from page http://pypi.python.org/simple/python-memcached/
+    Skipping link http://www.tummy.com/Community/software/python-memcached/ (from http://pypi.python.org/simple/python-memcached/); not a file
+    Found link ftp://ftp.tummy.com/pub/python-memcached/old-releases/python-memcached-1.45.tar.gz (from http://pypi.python.org/simple/python-memcached/), version: 1.45
+    Found link ftp://ftp.tummy.com/pub/python-memcached/python-memcached-1.40.tar.gz (from http://pypi.python.org/simple/python-memcached/), version: 1.40
+    Found link ftp://ftp.tummy.com/pub/python-memcached/old-releases/python-memcached-1.44.tar.gz (from http://pypi.python.org/simple/python-memcached/), version: 1.44
+    Found link ftp://ftp.tummy.com/pub/python-memcached/python-memcached-1.43.tar.gz (from http://pypi.python.org/simple/python-memcached/), version: 1.43
+    Found link ftp://ftp.tummy.com/pub/python-memcached/python-memcached-1.42.tar.gz (from http://pypi.python.org/simple/python-memcached/), version: 1.42
+    Found link ftp://ftp.tummy.com/pub/python-memcached/python-memcached-1.41.tar.gz (from http://pypi.python.org/simple/python-memcached/), version: 1.41
+    Skipping link ftp://ftp.tummy.com/pub/python-memcached/ (from http://pypi.python.org/simple/python-memcached/); not a file
+    Found link ftp://ftp.tummy.com/pub/python-memcached/python-memcached-latest.tar.gz (from http://pypi.python.org/simple/python-memcached/), version: latest
+  Analyzing links from page http://www.tummy.com/Community/software/python-memcached/
+    Skipping link http://www.tummy.com/favicon.ico (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .ico
+    Skipping link http://www.tummy.com/normal.css (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .css
+    Skipping link http://www.tummy.com/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Hosting/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Services/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Products/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Articles/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/software/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Presentations/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Glossary/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Order/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/journals/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Company/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/apis.bml (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .bml
+    Skipping link https://bugs.launchpad.net/python-memcached (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link ftp://ftp.tummy.com/pub/python-memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://gijsbert.org/cmemcache/index.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+    Skipping link http://www.python.org (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/PrivacyPolicy.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+  Analyzing links from page http://www.tummy.com/Community/software/python-memcached/
+    Skipping link http://www.tummy.com/favicon.ico (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .ico
+    Skipping link http://www.tummy.com/normal.css (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .css
+    Skipping link http://www.tummy.com/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Hosting/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Services/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Products/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Articles/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/software/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Presentations/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Glossary/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Order/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/journals/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Company/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/apis.bml (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .bml
+    Skipping link https://bugs.launchpad.net/python-memcached (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link ftp://ftp.tummy.com/pub/python-memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://gijsbert.org/cmemcache/index.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+    Skipping link http://www.python.org (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/PrivacyPolicy.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+  Analyzing links from page http://www.tummy.com/Community/software/python-memcached/
+    Skipping link http://www.tummy.com/favicon.ico (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .ico
+    Skipping link http://www.tummy.com/normal.css (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .css
+    Skipping link http://www.tummy.com/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Hosting/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Services/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Products/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Articles/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/software/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Presentations/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Glossary/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Order/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/journals/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Company/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/apis.bml (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .bml
+    Skipping link https://bugs.launchpad.net/python-memcached (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link ftp://ftp.tummy.com/pub/python-memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://gijsbert.org/cmemcache/index.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+    Skipping link http://www.python.org (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/PrivacyPolicy.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+  Analyzing links from page http://www.tummy.com/Community/software/python-memcached/
+    Skipping link http://www.tummy.com/favicon.ico (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .ico
+    Skipping link http://www.tummy.com/normal.css (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .css
+    Skipping link http://www.tummy.com/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Hosting/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Services/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Products/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Articles/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/software/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Presentations/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Glossary/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Order/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/journals/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Company/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/apis.bml (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .bml
+    Skipping link https://bugs.launchpad.net/python-memcached (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link ftp://ftp.tummy.com/pub/python-memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://gijsbert.org/cmemcache/index.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+    Skipping link http://www.python.org (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/PrivacyPolicy.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+  Analyzing links from page http://www.tummy.com/Community/software/python-memcached/
+    Skipping link http://www.tummy.com/favicon.ico (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .ico
+    Skipping link http://www.tummy.com/normal.css (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .css
+    Skipping link http://www.tummy.com/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Hosting/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Services/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Products/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Articles/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/software/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Presentations/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Glossary/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Order/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/journals/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Company/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/apis.bml (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .bml
+    Skipping link https://bugs.launchpad.net/python-memcached (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link ftp://ftp.tummy.com/pub/python-memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://gijsbert.org/cmemcache/index.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+    Skipping link http://www.python.org (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/PrivacyPolicy.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+  Analyzing links from page http://www.tummy.com/Community/software/python-memcached/
+    Skipping link http://www.tummy.com/favicon.ico (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .ico
+    Skipping link http://www.tummy.com/normal.css (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .css
+    Skipping link http://www.tummy.com/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Hosting/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Services/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Products/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Articles/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/software/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Presentations/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Glossary/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Order/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/journals/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Company/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/apis.bml (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .bml
+    Skipping link https://bugs.launchpad.net/python-memcached (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link ftp://ftp.tummy.com/pub/python-memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://gijsbert.org/cmemcache/index.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+    Skipping link http://www.python.org (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/PrivacyPolicy.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+  Analyzing links from page http://www.tummy.com/Community/software/python-memcached/
+    Skipping link http://www.tummy.com/favicon.ico (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .ico
+    Skipping link http://www.tummy.com/normal.css (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .css
+    Skipping link http://www.tummy.com/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Hosting/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Services/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Products/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Articles/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/software/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Presentations/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Glossary/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Order/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/journals/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Company/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/apis.bml (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .bml
+    Skipping link https://bugs.launchpad.net/python-memcached (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link ftp://ftp.tummy.com/pub/python-memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://gijsbert.org/cmemcache/index.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+    Skipping link http://www.python.org (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/PrivacyPolicy.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+  Analyzing links from page ftp://ftp.tummy.com/pub/python-memcached/
+  Analyzing links from page http://www.tummy.com/Community/software/python-memcached/
+    Skipping link http://www.tummy.com/favicon.ico (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .ico
+    Skipping link http://www.tummy.com/normal.css (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .css
+    Skipping link http://www.tummy.com/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Hosting/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Services/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Products/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Articles/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/software/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Presentations/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Community/Glossary/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Order/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/journals/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/Company/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.danga.com/memcached/apis.bml (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .bml
+    Skipping link https://bugs.launchpad.net/python-memcached (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link ftp://ftp.tummy.com/pub/python-memcached/ (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://gijsbert.org/cmemcache/index.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+    Skipping link http://www.python.org (from http://www.tummy.com/Community/software/python-memcached/); not a file
+    Skipping link http://www.tummy.com/PrivacyPolicy.html (from http://www.tummy.com/Community/software/python-memcached/); unknown archive format: .html
+  Using version 1.45 (newest of versions: 1.45, 1.44, 1.43, 1.42, 1.41, 1.40, latest)
+  Downloading python-memcached-1.45.tar.gz
+  Downloading from URL ftp://ftp.tummy.com/pub/python-memcached/old-releases/python-memcached-1.45.tar.gz (from http://pypi.python.org/simple/python-memcached/)
+  Running setup.py egg_info for package python-memcached
+    running egg_info
+    creating pip-egg-info/python_memcached.egg-info
+    writing pip-egg-info/python_memcached.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/python_memcached.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/python_memcached.egg-info/dependency_links.txt
+    writing manifest file 'pip-egg-info/python_memcached.egg-info/SOURCES.txt'
+    warning: manifest_maker: standard file '-c' not found
+    reading manifest file 'pip-egg-info/python_memcached.egg-info/SOURCES.txt'
+    writing manifest file 'pip-egg-info/python_memcached.egg-info/SOURCES.txt'
+  Source in ./build/python-memcached has version 1.45, which satisfies requirement python-memcached (from -r requirements.txt (line 6))
+Checking out geopy from svn+http://geopy.googlecode.com/svn/tags/release-0.93#egg=geopy checkout from svn+http://geopy.googlecode.com/svn/tags/release-0.93#egg=geopy (from -r requirements.txt (line 3))
+  Checking out http://geopy.googlecode.com/svn/tags/release-0.93 to ./src/geopy
+  Running command svn checkout -q http://geopy.googlecode.com/svn/tags/release-0.93 /host/Users/shane/Documents/dev/python/adrGeoCode/JoeGermuska-hello_newsroom-dad2f02/src/geopy
+  Error [Errno 2] No such file or directory while executing command svn checkout -q http://geopy.googlecode.com/svn/tags/release-0.93 /host/Users/shane/Documents/dev/python/adrGeoCode/JoeGermuska-hello_newsroom-dad2f02/src/geopy
+Exception:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 252, in main
+    self.run(options, args)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 408, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1741, in install_files
+    req_to_install.update_editable()
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1486, in update_editable
+    version_control(self.url).obtain(self.source_dir)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 2563, in obtain
+    ['svn', 'checkout', '-q'] + rev_options + [url, dest])
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 3509, in call_subprocess
+    cwd=cwd, env=env)
+  File "/usr/lib/python2.6/subprocess.py", line 633, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.6/subprocess.py", line 1139, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory
+------------------------------------------------------------
+/usr/bin/pip run on Sat Jul  3 16:28:43 2010
+Downloading/unpacking django-debug-toolbar (from -r requirements.txt (line 4))
+  Running setup.py egg_info for package django-debug-toolbar
+    running egg_info
+    writing pip-egg-info/django_debug_toolbar.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/django_debug_toolbar.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/django_debug_toolbar.egg-info/dependency_links.txt
+    warning: manifest_maker: standard file '-c' not found
+    reading manifest file 'pip-egg-info/django_debug_toolbar.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'pip-egg-info/django_debug_toolbar.egg-info/SOURCES.txt'
+  Source in ./build/django-debug-toolbar has version 0.8.3, which satisfies requirement django-debug-toolbar (from -r requirements.txt (line 4))
+Requirement already satisfied: psycopg2 in /usr/lib/python2.6/dist-packages (from -r requirements.txt (line 5))
+Requirement already satisfied: Django==1.2.1 in /usr/local/lib/python2.6/dist-packages (from -r requirements.txt (line 2))
+Downloading/unpacking python-memcached (from -r requirements.txt (line 6))
+  Running setup.py egg_info for package python-memcached
+    running egg_info
+    writing pip-egg-info/python_memcached.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/python_memcached.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/python_memcached.egg-info/dependency_links.txt
+    warning: manifest_maker: standard file '-c' not found
+    reading manifest file 'pip-egg-info/python_memcached.egg-info/SOURCES.txt'
+    writing manifest file 'pip-egg-info/python_memcached.egg-info/SOURCES.txt'
+  Source in ./build/python-memcached has version 1.45, which satisfies requirement python-memcached (from -r requirements.txt (line 6))
+Checking out geopy from svn+http://geopy.googlecode.com/svn/tags/release-0.93#egg=geopy checkout from svn+http://geopy.googlecode.com/svn/tags/release-0.93#egg=geopy (from -r requirements.txt (line 3))
+  Checking out http://geopy.googlecode.com/svn/tags/release-0.93 to ./src/geopy
+  Running command svn checkout -q http://geopy.googlecode.com/svn/tags/release-0.93 /host/Users/shane/Documents/dev/python/adrGeoCode/JoeGermuska-hello_newsroom-dad2f02/src/geopy
+  Error [Errno 2] No such file or directory while executing command svn checkout -q http://geopy.googlecode.com/svn/tags/release-0.93 /host/Users/shane/Documents/dev/python/adrGeoCode/JoeGermuska-hello_newsroom-dad2f02/src/geopy
+Exception:
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 252, in main
+    self.run(options, args)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 408, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1741, in install_files
+    req_to_install.update_editable()
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 1486, in update_editable
+    version_control(self.url).obtain(self.source_dir)
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 2563, in obtain
+    ['svn', 'checkout', '-q'] + rev_options + [url, dest])
+  File "/usr/lib/python2.6/dist-packages/pip.py", line 3509, in call_subprocess
+    cwd=cwd, env=env)
+  File "/usr/lib/python2.6/subprocess.py", line 633, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.6/subprocess.py", line 1139, in _execute_child
+    raise child_exception
+OSError: [Errno 2] No such file or directory

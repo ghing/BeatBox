@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/22/tags/release-0.93
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/16/tags/release-0.93/LICENSE
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/16/tags/release-0.93/setup.py
+END

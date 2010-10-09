@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/16/tags/release-0.93/geopy
+END
+geocoders.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/16/tags/release-0.93/geopy/geocoders.py
+END
+distance.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/16/tags/release-0.93/geopy/distance.py
+END
+util.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/16/tags/release-0.93/geopy/util.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/16/tags/release-0.93/geopy/__init__.py
+END

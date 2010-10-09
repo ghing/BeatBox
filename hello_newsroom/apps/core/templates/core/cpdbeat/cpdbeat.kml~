@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+    <Style id="cpdBeatPoly">
+      <LineStyle>
+        <width>1.5</width>
+        <color>336600</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>7d999933</color>
+      </PolyStyle>
+    </Style>
+
+  <Placemark>
+    <name>{{ cpdbeats.beat }}</name>
+    <description><BR>This CPD Beat intersects:<BR>{{intersects}}</description>
+    <styleUrl>#cpdBeatPoly</styleUrl>
+    {{ geomkml|safe }}
+  </Placemark>
+</Document>
+</kml>
