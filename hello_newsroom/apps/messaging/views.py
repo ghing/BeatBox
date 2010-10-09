@@ -23,8 +23,9 @@ def parse_sms(msg):
     # REGISTER
     if msg.startswith("register"):
         try:
-            _, beatnum = msg.split(" ")
-            beat = CpdBeats.get(objectid = beatnum)
+            _, beatnum = msg.strip().split(" ")
+            print beatnum
+            beat = CpdBeats.get(beat_num = beatnum)
             return (REGISTER, beat, None)
 
         except: 
@@ -42,7 +43,7 @@ def parse_sms(msg):
         if re.match("^\d+ ", msg):
             try: 
                 beatnum, msg = msg.split(" ", 1)
-                beat = CpdBeats.get(objectid = beatnum)
+                beat = CpdBeats.get(beat_num = beatnum)
             except:
                 raise SMSParseError("Usage: [beat-number] report")
 
