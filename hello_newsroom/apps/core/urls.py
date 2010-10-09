@@ -2,12 +2,13 @@ from django.conf import settings
 from django.conf.urls.defaults import *
 from django.contrib import admin
 from core import views
+from messaging.views import twilio
 
 urlpatterns = patterns('',
+    url(r'^smshook',
+        twilio),
     url(r'',
         views.index,name="search"),
-    url(r'^smstest',
-        views.test_sms),
     url(r'^admin', include(admin.site.urls))
 )
 

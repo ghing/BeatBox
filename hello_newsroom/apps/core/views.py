@@ -8,6 +8,7 @@ from django.contrib.gis.shortcuts import render_to_kml
 
 
 from core import models
+from messaging import *
 
 log = logging.getLogger("hello_newsroom")
 
