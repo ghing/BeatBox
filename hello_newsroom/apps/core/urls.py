@@ -6,10 +6,10 @@ from messaging.views import twilio
 
 urlpatterns = patterns('',
     url(r'^smshook',
-        twilio),
-    url(r'',
-        views.index,name="search"),
-    url(r'^admin', include(admin.site.urls))
+        twilio
+    url(r'^m', views.mobile_index),
+    url(r'^admin', include(admin.site.urls)),
+    url(r'', views.index,name="search"),
 )
 
 

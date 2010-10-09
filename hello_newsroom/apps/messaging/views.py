@@ -3,6 +3,7 @@ from django.shortcuts import render_to_response
 
 from datetime import datetime
 from core import models
+import re
 
 REGISTER, INCIDENT, NOTIFY, APPROVE = range(4)
 
@@ -47,6 +48,7 @@ def parse_sms(msg):
 
 
             return (INCIDENT, beat, msg)
+        return (INCIDENT, None, msg)
             
 
     
@@ -59,7 +61,7 @@ def twilio(request):
 
     # Log the SMS request
     timestamp = datetime.now()
-    sms = models.SMS.objects.create(smsfrom=request.From, smsto=request.To, body=request.Body, time=datetime.now)
+    sms = models.SMS.objects.create(smsfrom=request.REQUEST['From'], smsto=request.REQUEST['To'], body=request.REQUEST['Body'], time=datetime.now())
     sms.save()
 
 
