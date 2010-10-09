@@ -5,6 +5,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from datetime import datetime
 from core import models
 import re
+from messaging.messaging import sendMsg, sendSms
 
 REGISTER, INCIDENT, NOTIFY, APPROVE = range(4)
 
@@ -53,7 +54,21 @@ def parse_sms(msg):
         return (INCIDENT, None, msg)
             
 
+def notify_admin(incident):
+    beatAdmins = incident.beatOccurence.BeatUser_set.filter(is_staff=True).all()
+    sendMsg(message, beatAdmins)
+
+
+
+
+def notify_beat(incident):
+    beatUsers = incident.beatOccurence.BeatUser_set.all()
+
+    sendMsg(message, beatUsers)
+
     
+
+
 
 
 def twilio(request):
@@ -77,6 +92,9 @@ def twilio(request):
 
     if msgtype == REGISTER:
         cellNum = request.REQUEST['From']
+        if models.BeatUser.objects.filter(cellNum = cellNum).exists():
+            return render_to_response('twilio_responses/parseerror.xml', {'reason': 'You are already registered'}) 
+
         user = models.BeatUser(cpdBeatIntersection=beat, cellNum = cellNum)
         user.username = cellNum
         user.password = cellNum
