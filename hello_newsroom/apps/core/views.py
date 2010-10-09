@@ -27,5 +27,5 @@ def index(request):
 def mobile_index(request):
     template_dict = {}
     
-    return render_to_response('user-screen.html', tempalte_dict)
+    return render_to_response('user-screen.html', template_dict)
 
