@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
+from django.core.exceptions import ObjectDoesNotExist
 
 from datetime import datetime
 from core import models
@@ -25,11 +26,11 @@ def parse_sms(msg):
         try:
             _, beatnum = msg.strip().split(" ")
             print beatnum
-            beat = CpdBeats.get(beat_num = beatnum)
+            beat = models.CpdBeats.objects.get(beat_num = beatnum)
             return (REGISTER, beat, None)
 
         except: 
-            raise SMSParseError("Usage: register <beat-number>")
+            raise SMSParseError("Usage: register <beat-number> %s"% beatnum)
 
     # NOTIFY
     elif msg.startswith("notify"):
@@ -43,7 +44,7 @@ def parse_sms(msg):
         if re.match("^\d+ ", msg):
             try: 
                 beatnum, msg = msg.split(" ", 1)
-                beat = CpdBeats.get(beat_num = beatnum)
+                beat = models.CpdBeats.get(beat_num = beatnum)
             except:
                 raise SMSParseError("Usage: [beat-number] report")
 
@@ -75,7 +76,10 @@ def twilio(request):
 
 
     if msgtype == REGISTER:
-        user = BeatUser(cpdBeatIntersection=beat, cellNum = request.From)
+        cellNum = request.REQUEST['From']
+        user = models.BeatUser(cpdBeatIntersection=beat, cellNum = cellNum)
+        user.username = cellNum
+        user.password = cellNum
         user.save()
         return render_to_response('twilio_response/registrationreceived.xml')
 
@@ -83,8 +87,8 @@ def twilio(request):
         # Log an incident
 
         # Is the user registered?
-        try: user = models.BeatUser.objects.get(cellNum = sms.sender)
-        except: 
+        try: user = models.BeatUser.objects.get(cellNum = sms.smsfrom)
+        except ObjectDoesNotExist: 
             return render_to_response('twilio_responses/parseerror.xml', {'reason': 'First register by texting register <beat number>'})
 
         
@@ -110,7 +114,7 @@ def twilio(request):
         
         try: 
             incident = Incident.objects.get(objid = int(msg))
-        except:
+        except ObjectDoesNotExist:
             return render_to_response('twilio_responses/parseerror.xml', {'reason': 'Invalid incident: %s' % msg})
 
         if not user.is_staff:
