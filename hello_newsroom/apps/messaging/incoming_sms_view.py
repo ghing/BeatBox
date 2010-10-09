@@ -59,7 +59,7 @@ def twilio(request):
 
     # Log the SMS request
     timestamp = datetime.now()
-    sms = models.Sms.objects.create(request.From, request.to, request.body, datetime.now)
+    sms = models.Sms.objects.create(request.From, request.To, request.Body, datetime.now)
     sms.save()
 
 
