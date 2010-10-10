@@ -3,7 +3,7 @@ About BeatBox
 
 BeatBox is a mobile application to help neighborhood watch groups in cities like Chicago share information about public safety incidents.  Users sign up as part of a beat_ and send alerts via SMS or mobile web.  A "beat leader" then receives the alert and can choose to forward it on to other users in the beat.
 
-It was created over the course of one weekend at `The Media Consortium's Mobile Hackathon <http://mobilehackathon.eventbrite.com/>`_.
+It was created over the course of one weekend at `The Media Consortium's Mobile Hackathon <http://mobilehackathon.eventbrite.com/>`_ by `Shane Shifflett <http://shaneshifflett.com/>`_, `Steve Melendez <http://twitter.com/smelendez/>`_,  `Geoff Hing <http://twitter.com/geoffhing/>`_ and `Chris Keller <http://www.chrislkeller.com>`_.  `Bernie Leung <http://twitter.com/bernieleung/>`_ created a prototype for an Android app based on BeatBox.
 
 Shane Shifflett came up with the idea after reporting about muggings in `Chicago's Chinatown neighborhood <http://news.medill.northwestern.edu/chicago/news.aspx?id=162645>`_.  He found that even though there was a community that was tightly knit and concerned about neighborhood safety but, because of language barriers, was unwilling to notify police, or waited hours to find an English speaker before reporting the incident.  BeatBox lets neighbors share alerts in real time and saves documentation to show the police at beat meetings.
 
