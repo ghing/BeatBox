@@ -1,4 +1,4 @@
-{% extends base-mobile.html %}
+{% extends "base-mobile.html" %}
 
 {% block main %}
 <!-- BEGIN FORM -->
@@ -7,10 +7,10 @@
 <h2>Thank you for your submission.</h2>
 
 <!-- BEGIN OPTION MENU -->
-<a href="login.html">
+<a href="/core/m/incident">
 <input type="submit" class="btn" value="Submit Another Tip" /></a>
 
-<a href="index.html">
+<a href="/core/m/logout">
 <input type="submit" class="btn" value="Log Out" /></a>
 <!-- END OPTION MENU -->
 
