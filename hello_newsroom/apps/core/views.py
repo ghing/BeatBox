@@ -29,8 +29,7 @@ def mobile_index(request):
     template_dict = {}
     
     if request.user.is_authenticated():
-        # Do something for authenticated users.
-        pass
+        return HttpResponseRedirect('/core/m/report')
     else:
         print 'hello2'
         return render_to_response('user-screen.html', template_dict)
@@ -50,6 +49,11 @@ def mobile_login(request):
     else:
         # Return an 'invalid login' error message.
         pass
+    
+def mobile_report(request):
+    template_dict = {}
+    
+    return render_to_response('report-mobile.html', template_dict)
 
 def mobile_register(request):
     template_dict = {}
