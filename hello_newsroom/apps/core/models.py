@@ -43,7 +43,7 @@ class Incident(models.Model):
     msg = models.CharField(max_length = 255)
     relatedIncidents = models.ManyToManyField("self")
     beatOccurence = models.ForeignKey(CpdBeats, blank = False, null = False)
-    voteTotal = models.DecimalField(default=0)
+    voteTotal = models.DecimalField(default=0, decimal_places=2, max_digits=5)
 
 class SMS(models.Model):
     objid = models.AutoField(primary_key=True)

@@ -142,11 +142,8 @@ def mobile_incident(request):
 
 def mobile_incident_vote(request):
     template_dict = {}
-    if request.meethod != 'POST':
-        return HttpResponseRedirect('/core/m')
-    else:
-        if request.user.is_authenticated():
-            return render_to_response('user-screen.html', template_dict)
+    if not request.user.is_authenticated():
+        return render_to_response('user-screen.html', template_dict)
 
     try:
         vote = int(request.GET['vote'])
@@ -160,8 +157,8 @@ def mobile_incident_vote(request):
     else:
         vote_value = -1
 
-    incident_uid = request.GET['uid']
-    incident = models.Incident.objects.get(id=incident_uid)
+    incident_uid = request.GET['objid']
+    incident = models.Incident.objects.get(objid=incident_uid)
 
     # create an instance of the bigdoor client
     c = Client(secret_key, app_key)
