@@ -27,12 +27,12 @@ def index(request):
 
 def mobile_index(request):
     template_dict = {}
-<<<<<<< HEAD:hello_newsroom/apps/core/views.py
     
     if request.user.is_authenticated():
         # Do something for authenticated users.
         pass
     else:
+        print 'hello2'
         return render_to_response('user-screen.html', template_dict)
 
 def mobile_login(request): 
@@ -50,9 +50,6 @@ def mobile_login(request):
     else:
         # Return an 'invalid login' error message.
         pass
-=======
-    print 'hello2'
-    return render_to_response('user-screen.html', template_dict)
 
 def mobile_register(request):
     template_dict = {}
@@ -71,4 +68,3 @@ def mobile_register(request):
         beatuser.save()
 
         return HttpResponseRedirect('/core/m')
->>>>>>> e8aa6e43986aae9291e1931c0fd530cade701b48:hello_newsroom/apps/core/views.py
