@@ -181,16 +181,18 @@ def mobile_incident_vote(request):
                    verbosity=9,
                    allow_negative_balance=1)
     # execute transaction for incident
-    resp = c.post('named_transaction_group/612563/execute/incident:%d' % incident.id,
+    resp = c.post('named_transaction_group/612563/execute/incident:%d' % incident.objid,
                   payload=payload)
+    resp = resp[0]
+
 
     balances = resp['end_user']['currency_balances']
 
     # this probably wants to be pulled from settings
     vote_currency_id = 1065 
-    vote_balance = [c for c in balances if c['id'] == vote_currency_id][0]
+    vote_balance = [c for c in balances if c['currency_id'] == vote_currency_id][0]
 
-    incident.voteTotal = vote_balance
+    incident.voteTotal += vote_value
     incident.save()
 
-    return HttpResponseRedirect('/core/m/list_incidents')
+    return HttpResponseRedirect('/core/m/listincidents')
