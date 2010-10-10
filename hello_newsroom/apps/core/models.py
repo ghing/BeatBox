@@ -29,10 +29,13 @@ cpdbeats_mapping = {
     'shape_len' : 'SHAPE_LEN',
     'geom' : 'POLYGON',
 }
-class BeatUser(User):
+class BeatUser(models.Model):
+    user = models.ForeignKey(User, unique=True)
     cpdBeatIntersection = models.ForeignKey(CpdBeats, blank=False, null = False)
     reportedIncidents = models.ManyToManyField("Incident")
     cellNum = models.CharField(max_length=16)
+    def __unicode__(self):
+        return self.user.username
     #User has an email class
 class Incident(models.Model):
     objid = models.AutoField(primary_key=True)
