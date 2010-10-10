@@ -171,7 +171,7 @@ def mobile_vote(request):
                    verbosity=9,
                    allow_negative_balance=1)
     # execute transaction for incident
-    resp = c.post('named_transaction_group/#group_id/execute/%d' % incident.id,
+    resp = c.post('named_transaction_group/612563/execute/incident:%d' % incident.id,
                   payload=payload)
 
     balances = resp['end_user']['currency_balances']
