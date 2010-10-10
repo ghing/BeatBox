@@ -13,6 +13,8 @@ from messaging.views import notify_admin, notify_beat
 from core import models
 from messaging import *
 
+from bigdoorkit import Client
+
 log = logging.getLogger("hello_newsroom")
 
 def test_sms(request):
@@ -148,3 +150,48 @@ def api_listbeats(request):
     return HttpResponse(json.dumps(beat_nums))
 
     #return HttpResponse(json.dumps(beat_nums), mimetype='application/json')
+
+def mobile_incident_vote(request):
+    template_dict = {}
+    if request.meethod != 'POST':
+        return HttpResponseRedirect('/core/m')
+    else:
+        if request.user.is_authenticated():
+            return render_to_response('user-screen.html', template_dict)
+
+    try:
+        vote = int(request.GET['vote'])
+    except (ValueError, KeyError), e:
+        #deal with the error here
+        raise
+
+    if vote > 0:
+        # vote up
+        vote_value = 1
+    else:
+        vote_value = -1
+
+    incident_uid = request.GET['uid']
+    incident = models.Incident.objects.get(id=incident_uid)
+
+    # create an instance of the bigdoor client
+    c = Client(secret_key, app_key)
+
+    # create request post data
+    payload = dict(amount=vote_value,
+                   verbosity=9,
+                   allow_negative_balance=1)
+    # execute transaction for incident
+    resp = c.post('named_transaction_group/612563/execute/incident:%d' % incident.id,
+                  payload=payload)
+
+    balances = resp['end_user']['currency_balances']
+
+    # this probably wants to be pulled from settings
+    vote_currency_id = 0
+    vote_balance = [c for c in balances if c['id'] == vote_currency_id][0]
+
+    incident.voteTotal = vote_balance
+    incident.save()
+
+    return HttpResponseRedirect('/core/m/list_incidents')
