@@ -85,6 +85,12 @@ this is a header
 <form method="post" action="/core/m/logout">
 <input type="submit" class="btn" value="Log Out" />
 </form>
+{% if user.is_staff %}
+<br>
+<a href = "/core/m/listincidents">View incidents on my beat</a>
+<br>
+<a href = "/core/m/listusers">View users on my beat</a>
+{% endif %}
 {% else %}
 this is a footer
 {% endif %}

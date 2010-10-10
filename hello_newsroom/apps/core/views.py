@@ -7,7 +7,7 @@ from django.contrib.gis.shortcuts import render_to_kml
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect
 from django.template import RequestContext
-from messaging.views import notify_admin
+from messaging.views import notify_admin, notify_beat
 
 from core import models
 from messaging import *
@@ -75,8 +75,22 @@ def mobile_register(request):
 
         return HttpResponseRedirect('/core/m')
 
+def mobile_listusers(request):
+    template_dict = {}
+    if not request.user.is_authenticated() or not request.user.is_staff:
+        return render_to_response('user-screen.html', template_dict)
+
+    beatUser = models.BeatUser.objects.get(user=request.user)
+    beat = beatUser.cpdBeatIntersection
+
+    users = models.BeatUser.objects.filter(cpdBeatIntersection=beat).all()
+
+    return render_to_response('list-users-mobile.html', {'user_list' : users, 'beat' : beat})
+
 def mobile_listincidents(request):
     template_dict = {}
+    if not request.user.is_authenticated() or not request.user.is_staff:
+        return render_to_response('user-screen.html', template_dict)
 
     beatUser = models.BeatUser.objects.get(user=request.user)
     beat = beatUser.cpdBeatIntersection
@@ -86,7 +100,20 @@ def mobile_listincidents(request):
     return render_to_response('list-incidents-mobile.html', {'incident_list' : incidents, 'beat' : beat})
 
 
+def mobile_notifybeat(request):
+    template_dict = {}
+    if not request.user.is_authenticated() or not request.user.is_staff:
+        return render_to_response('user-screen.html', template_dict)
+
+    incident = models.Incident.objects.get(objid=request.REQUEST['incident'])
+    notify_beat(incident)
+    return render_to_response('thankyou.html', {})
+
+
+
+
 def mobile_incident(request):
+    template_dict = {}
     if request.method != 'POST':
         return HttpResponseRedirect('/core/m')
     else:
