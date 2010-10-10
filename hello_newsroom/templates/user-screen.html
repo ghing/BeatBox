@@ -2,19 +2,19 @@
 
 {% block main %}
 <!-- BEGIN FORM -->
-<form method="post" action="">
+<form method="post" action="/core/m/login">
 
 <!-- BEGIN USERNAME -->
 <p>
 <label class="text">Username</label>
-<input type="text" id="headline" name="headline" class="text"/>
+<input type="text" id="username" name="username" class="text" />
 </p>
 <!-- END USERNAME -->
 
 <!-- BEGIN PASSWORD -->
 <p>
 <label class="text">Password</label>
-<input type="text" id="byline" name="byline" class="text"/>
+<input type="password" id="password" name="password" class="text" />
 </p>
 <!-- END PASSWORD -->
 
@@ -25,12 +25,11 @@
 <input type="hidden" name="process" value="1"/>
 
 <!-- BEGIN OPTION MENU -->
-<a href="login.html">
-<input type="submit" class="btn" value="Log In" /></a>
+<input type="submit" class="btn" value="Log In" />
 
 <h2>OR</h2>
 
-<a href="register.html">
+<a href="/core/m/register">
 <input type="submit" class="btn" value="Register" /></a>
 <!-- END OPTION MENU -->
 

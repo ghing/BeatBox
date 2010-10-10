@@ -1,34 +1,34 @@
-{% extends base-mobile.html %}
+{% extends 'base-mobile.html' %}
 
 {% block main %}
 <!-- BEGIN FORM -->
-<form method="post" action="">
+<form method="POST" action="/core/m/register">
 
 <!-- BEGIN USERNAME -->
 <p>
 <label class="text">Username</label>
-<input type="text" id="headline" name="headline" class="text"/>
+<input type="text" id="headline" name="fUsername" class="text"/>
 </p>
 <!-- END USERNAME -->
 
 <!-- BEGIN PASSWORD -->
 <p>
 <label class="text">Password</label>
-<input type="text" id="byline" name="byline" class="text"/>
+<input type="text" id="byline" name="fPassword" class="text"/>
 </p>
 <!-- END PASSWORD -->
 
 <!-- BEGIN USERNAME -->
 <p>
 <label class="text">CPD Beat</label>
-<input type="text" id="headline" name="headline" class="text"/>
+<input type="text" id="headline" name="fBeatNum" class="text"/>
 </p>
 <!-- END USERNAME -->
 
 <!-- BEGIN PASSWORD -->
 <p>
 <label class="text">Mobile Number</label>
-<input type="text" id="byline" name="byline" class="text" value="+17735678958"/>
+<input type="text" id="byline" name="fCellNum" class="text" value="+17735678958"/>
 </p>
 <!-- END PASSWORD -->
 
@@ -38,8 +38,7 @@
 
 <input type="hidden" name="process" value="1"/>
 
-<a href="login.html">
-<input type="submit" class="btn" value="Log In" /></a>
+<input type="submit" class="btn" value="Log In" />
 
 </form>
 <!-- END FORM -->
