@@ -1,11 +1,12 @@
 import logging
+import json
 
 from django.shortcuts import render_to_response
 from django.contrib.gis.geos import *
 from django.contrib.gis.measure import Distance
 from django.contrib.gis.shortcuts import render_to_kml
 from django.contrib.auth import authenticate, login, logout
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
 from messaging.views import notify_admin, notify_beat
 
@@ -139,6 +140,16 @@ def mobile_incident(request):
             return render_to_response('thankyou.html', {})
         else:
             return render_to_response('user-screen.html', template_dict)
+
+def api_listbeats(request):
+    beat_nums = []
+    for beat_num in models.BeatUser.objects.values('cpdBeatIntersection__beat_num').distinct():
+        beat_nums.append(beat_num['cpdBeatIntersection__beat_num'])
+
+    # Don't set mime type for testing so I can view in browser.
+    return HttpResponse(json.dumps(beat_nums))
+
+    #return HttpResponse(json.dumps(beat_nums), mimetype='application/json')
 
 def mobile_incident_vote(request):
     template_dict = {}
