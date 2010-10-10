@@ -82,6 +82,17 @@ def mobile_register(request):
         #probably want some sort of feedback here
         return HttpResponseRedirect('/core/m/incident')
 
+def mobile_listincidents(request):
+    template_dict = {}
+
+    beatUser = models.BeatUser.objects.get(user=request.user)
+    beat = beatUser.cpdBeatIntersection
+
+    incidents = models.Incident.objects.filter(beatOccurence=beat).all()
+
+    return render_to_response('list-incidents-mobile.html', {'incident_list' : incidents, 'beat' : beat})
+
+
 def mobile_incident(request):
     if request.method != 'POST':
         return HttpResponseRedirect('/core/m')
@@ -99,6 +110,3 @@ def mobile_incident(request):
 
    
             
-
-        
-        
