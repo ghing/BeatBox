@@ -37,8 +37,9 @@ def parse_sms(msg):
     elif msg.startswith("notify"):
         try:
             _, incident = msg.split(" ")
-            return (NOTIFY, _, incident)
-        except: raise SMSParseError("Usage: NOTIFY <incident-number>")
+            return (NOTIFY, None, incident)
+            
+        except ValueError: raise SMSParseError("Usage: NOTIFY <incident-number>")
 
     # INCIDENT
     else:
@@ -59,7 +60,7 @@ def notify_admin(incident):
 
     beatAdmins = models.BeatUser.objects.filter(cpdBeatIntersection=incidentbeat).filter(user__is_staff=True).all()
     #Fix me beatAdmins = incident.beatOccurence.BeatUser_set.filter(user__is_staff=True).all()
-    sendMsg(incident.msg, beatAdmins)
+    sendMsg('REPORT: "%s" from %s. Reply with NOTIFY %s to notify beat.' % (incident.msg, incident.reportedBy.cellNum, incident.objid), beatAdmins)
 
 
 
@@ -132,21 +133,24 @@ def twilio(request):
             return render_to_response('twilio_responses/beatnotified.xml')
         else:
             notify_admin(incident)
-            # notify_beat(incident)
             return render_to_response('twilio_responses/adminnotified.xml')
 
     elif msgtype == NOTIFY:
+        try: user = models.BeatUser.objects.get(cellNum = sms.smsfrom)
+        except ObjectDoesNotExist: 
+            return render_to_response('twilio_responses/parseerror.xml', {'reason': 'First register by texting register <beat number>'})
         # The message should be an incident ID
         beat = user.cpdBeatIntersection
         
         try: 
-            incident = models.Incident.objects.get(objid = int(msg))
+            incident = models.Incident.objects.get(objid = int(message))
         except ObjectDoesNotExist:
             return render_to_response('twilio_responses/parseerror.xml', {'reason': 'Invalid incident: %s' % msg})
 
         if not user.user.is_staff:
             return render_to_response('twilio_responses/parseerror.xml', {'reason': 'You\'re not the beat administrator'})
 
+        notify_beat(incident)
         return render_to_response('twilio_responses/beatnotified.xml')
 
 
