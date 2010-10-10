@@ -67,13 +67,20 @@ def mobile_register(request):
         fPass = request.POST.get('fPassword','')
         fBeatNum = request.POST.get('fBeatNum','')
         fCellNum = request.POST.get('fCellNum','')
+        fAdmin = request.POST.get('fAdmin','')
         print fUsername
+        print fAdmin
+        adminFlag = False
+        if fAdmin == 'on':
+            adminFlag = True
         beat = models.CpdBeats.objects.get(beat_num=fBeatNum)
         thisuser = models.User.objects.create_user(username=fUsername, password=fPass, email='a@a.com')
+        thisuser.is_staff = adminFlag
+        thisuser.save()
         beatuser = models.BeatUser(user=thisuser, cpdBeatIntersection=beat, cellNum = fCellNum)
         beatuser.save()
-
-        return HttpResponseRedirect('/core/m')
+        #probably want some sort of feedback here
+        return HttpResponseRedirect('/core/m/incident')
 
 def mobile_listusers(request):
     template_dict = {}
