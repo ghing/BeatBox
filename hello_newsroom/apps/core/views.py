@@ -74,3 +74,16 @@ def mobile_register(request):
         beatuser.save()
 
         return HttpResponseRedirect('/core/m')
+
+def mobile_listincidents(request):
+    template_dict = {}
+
+    beatUser = models.BeatUser.objects.get(user=request.user)
+    beat = beatUser.cpdBeatIntersection
+
+    incidents = models.Incident.objects.filter(beatOccurence=beat).all()
+
+    return render_to_response('list-incidents-mobile.html', {'incident_list' : incidents, 'beat' : beat})
+
+
+

@@ -6,6 +6,7 @@ from messaging.views import twilio
 
 urlpatterns = patterns('',
     url(r'^m/register', views.mobile_register),
+    url(r'^m/listincidents', views.mobile_listincidents),
     url(r'^m/login', views.mobile_login),
     url(r'^m/logout', views.mobile_logout),
     url(r'm/report', views.mobile_report),
