@@ -3,19 +3,24 @@ body
 {background-color:#ebebdf; color:#000000; font-family: Helvetica,sans-serif;}
 
 #container
-{border: 2px solid #000000;}
+{}
 
-.header
+header
 {height:auto; margin-bottom: 10px;}
 
+header h1
+{margin-bottom: 20px;}
+
+header img
+{margin-bottom: 10px;}
+
 #main
-{background-color:#ffffff; padding: 15px; }
+{width: 300px; margin: auto; background-color:#ffffff; padding: 15px; border: 2px solid #000000;}
 
 textarea
 {width:200px; height:200px; padding:5px; border:1px solid #aaa;}
 
 /*BEGIN TYPOGRAPHY*/
-
 h1
 {font-size: 30px; margin: 10px 0 20px;}
 
@@ -23,7 +28,7 @@ h2
 {font-size: 24px; margin: 10px 0 20px;}
 
 .text
-{font-size: 14px; display:block; margin-bottom:5px; font-weight:bold;}
+{font-size: 16px; display:block; margin-bottom:5px; font-weight:bold;}
 
 .menu
 {font-size: 14px; display:block; margin-bottom:5px; font-weight:bold;}
@@ -48,7 +53,7 @@ input
 {border:2px solid #0d506e;}
 
 .btn
-{width:212px; margin-bottom:10px; padding:10px 0; border:2px solid #000000; background-color:#0d506e; color:#fff; font-size:18px; font-weight:bold; -webkit-appearance: none;}
+{width:300px; margin: auto; margin-top: 15px; padding:10px 0; border:2px solid #000000; background-color:#0d506e; color:#fff; font-size:18px; font-weight:bold; -webkit-appearance: none;}
 
 .btn:hover
 {border:2px solid #0d506e; background-color:#000000; color:#fff;}
@@ -56,3 +61,45 @@ input
 .clear
 {clear:both;}
 
+/*BEGIN IMAGES*/
+header, footer
+{height:auto; margin-bottom: 10px;}
+
+header img, footer img
+{width: 300px;}
+
+
+
+
+
+/*BEGIN DATA RETURN*/
+
+.incidents, .users
+{margin-top: 10px; list-style-type: none}
+
+.incident-return
+{margin-bottom: 10px;}
+
+.user-name
+{margin-top: 20px; font-weight: bold;}
+
+.user-return
+{margin-top: 15px;}
+
+.incident-name
+{font-size: 12px;}
+
+.votes
+{font-weight: bold; margin-top: 10px; font-size: 15px }
+
+
+/*MISC*/
+footer
+{margin-top: 20px;}
+
+
+
+/*BEGIN VOTE*/
+
+#incident-vote
+{float: right; margin-right: 35px;}

@@ -1,19 +1,63 @@
 {% extends "base-mobile.html" %}
 
+
+
+
+
 {% block main %}
-Incidents in beat {{ beat.beat_num}}:
+
+<!-- BEGIN HEADER -->
+<header>
+<h1>Chicago<br/>Beat Box</h1>
+<img src="images/header-image.png" alt="Header Image" />
+</header>
+<!-- END HEADER -->
+
+<div id="slideshow">
+<ul class="slides-nav">
+<li class="on"><a href="#slide-one">Incidents</a></li>
+<li><a href="#slide-two">Users by Beat</a></li>
+</ul>
+
+
+<li id="slide-one">
+<label class="text">Incidents in Beat {{ beat.beat_num}}:</label>
+
+
+<div class="slides">
 <ul>
+
 
 {% for incident in incident_list %}
 
-<li> 
-    {{ incident.reportedBy }} ||
-    {{ incident.msg }} ||
-    <a href="/core/m/notifybeat/?incident={{ incident.objid }}">Notify all users in beat</a>
 
-</li>
+
+<!-- BEGIN ITEM -->
+<div id="incident-item">
+<!-- BEGIN DATA -->
+<div id="incident-data">
+<p class="user-name">{{ incident.reportedBy }}</p>
+<p class="incident-name">{{ incident.msg }}</p>
+<p class="notify"><a href="/core/m/notifybeat/?incident={{ incident.objid }}">Notify all users in beat</a></p>
+<p class="votes">Score: </a></p>
+</div>
+<!-- END DATA -->
+
+<!-- BEGIN VOTE -->
+<div id="incident-vote">
+<a href="#"><strong>Vote Here Fool!</strong></a>
+</div>
+<!-- END VOTE -->
+</div>
+<!-- END ITEM -->
+
 
 {% endfor %}
+</li>
+
+
+
+
 </ul>
 <a href="/core/m">Return to main page</a>
 
