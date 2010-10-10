@@ -4,7 +4,7 @@ import mail
 
 def sendSms(message, users):
     for user in users:
-        sms.sendMessage(user.cell, message)
+        sms.sendMessage(user.cellNum, message)
 
 def sendEmail(message, users):
     for user in users:
@@ -16,11 +16,11 @@ def sendMsg(message, users):
     emailUsers = []
 
     for user in users:
-        if user.email:
+        #if user.email:
             #emailUsers.append(user)
-            pass
+        #    pass
 
-        if user.cell:
+        if user.cellNum:
             smsUsers.append(user)
     
     if smsUsers:

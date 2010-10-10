@@ -37,17 +37,18 @@ def parse_sms(msg):
     elif msg.startswith("notify"):
         try:
             _, incident = msg.split(" ")
-            return (NOTIFY, _, incident)
-        except: raise SMSParseError("Usage: NOTIFY <incident-number>")
+            return (NOTIFY, None, incident)
+            
+        except ValueError: raise SMSParseError("Usage: NOTIFY <incident-number>")
 
     # INCIDENT
     else:
         if re.match("^\d+ ", msg):
             try: 
                 beatnum, msg = msg.split(" ", 1)
-                beat = models.CpdBeats.get(beat_num = beatnum)
-            except:
-                raise SMSParseError("Usage: [beat-number] report")
+                beat = models.CpdBeats.objects.get(beat_num = beatnum)
+            except ValueError:
+                raise SMSParseError("Usage: [beat-number] report %s" % beatnum)
 
 
             return (INCIDENT, beat, msg)
@@ -55,16 +56,21 @@ def parse_sms(msg):
             
 
 def notify_admin(incident):
-    beatAdmins = incident.beatOccurence.BeatUser_set.filter(is_staff=True).all()
-    sendMsg(message, beatAdmins)
+    incidentbeat = incident.beatOccurence
+
+    beatAdmins = models.BeatUser.objects.filter(cpdBeatIntersection=incidentbeat).filter(user__is_staff=True).all()
+    #Fix me beatAdmins = incident.beatOccurence.BeatUser_set.filter(user__is_staff=True).all()
+    sendMsg('REPORT: "%s" from %s. Reply with NOTIFY %s to notify beat.' % (incident.msg, incident.reportedBy.cellNum, incident.objid), beatAdmins)
 
 
 
 
 def notify_beat(incident):
-    beatUsers = incident.beatOccurence.BeatUser_set.all()
+    incidentbeat = incident.beatOccurence
 
-    sendMsg(message, beatUsers)
+    beatUsers = models.BeatUser.objects.filter(cpdBeatIntersection=incidentbeat).all()
+
+    sendMsg(incident.msg, beatUsers)
 
     
 
@@ -95,11 +101,14 @@ def twilio(request):
         if models.BeatUser.objects.filter(cellNum = cellNum).exists():
             return render_to_response('twilio_responses/parseerror.xml', {'reason': 'You are already registered'}) 
 
-        user = models.BeatUser(cpdBeatIntersection=beat, cellNum = cellNum)
-        user.username = cellNum
+        beatuser = models.BeatUser(cpdBeatIntersection=beat, cellNum = cellNum)
+        user = models.User()
+        user.username=cellNum
         user.password = cellNum
         user.save()
-        return render_to_response('twilio_response/registrationreceived.xml')
+        beatuser.user = user
+        beatuser.save()
+        return render_to_response('twilio_responses/registrationreceived.xml')
 
     if msgtype == INCIDENT:
         # Log an incident
@@ -115,10 +124,10 @@ def twilio(request):
             # Assume the user's in his home beat, unless he specified one
             beat = user.cpdBeatIntersection
 
-        incident = Incident(reportedBy = user, beatOccurence = beat, msg = message)
+        incident = models.Incident(reportedBy = user, beatOccurence = beat, msg = message)
         incident.save()
 
-        if user.is_staff:
+        if user.user.is_staff:
             # If the admin submitted the incident, just notify the beat
             notify_beat(incident)
             return render_to_response('twilio_responses/beatnotified.xml')
@@ -127,17 +136,21 @@ def twilio(request):
             return render_to_response('twilio_responses/adminnotified.xml')
 
     elif msgtype == NOTIFY:
+        try: user = models.BeatUser.objects.get(cellNum = sms.smsfrom)
+        except ObjectDoesNotExist: 
+            return render_to_response('twilio_responses/parseerror.xml', {'reason': 'First register by texting register <beat number>'})
         # The message should be an incident ID
         beat = user.cpdBeatIntersection
         
         try: 
-            incident = Incident.objects.get(objid = int(msg))
+            incident = models.Incident.objects.get(objid = int(message))
         except ObjectDoesNotExist:
             return render_to_response('twilio_responses/parseerror.xml', {'reason': 'Invalid incident: %s' % msg})
 
-        if not user.is_staff:
+        if not user.user.is_staff:
             return render_to_response('twilio_responses/parseerror.xml', {'reason': 'You\'re not the beat administrator'})
 
+        notify_beat(incident)
         return render_to_response('twilio_responses/beatnotified.xml')
 
 
