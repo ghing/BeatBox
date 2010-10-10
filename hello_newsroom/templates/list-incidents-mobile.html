@@ -1,0 +1,20 @@
+{% extends "base-mobile.html" %}
+
+{% block main %}
+Incidents in beat {{ beat.beat_num}}:
+<ul>
+
+{% for incident in incident_list %}
+
+<li> 
+    {{ incident.reportedBy }} ||
+    {{ incident.msg }} ||
+    <a href="/core/m/notifybeat/?incident={{ incident.objid }}">Notify all users in beat</a>
+
+</li>
+
+{% endfor %}
+</ul>
+<a href="/core/m">Return to main page</a>
+
+{% endblock %}

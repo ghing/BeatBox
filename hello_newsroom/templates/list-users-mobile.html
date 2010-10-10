@@ -1,0 +1,19 @@
+{% extends "base-mobile.html" %}
+
+{% block main %}
+Users in beat {{ beat.beat_num}}:
+<ul>
+<li><b>Number || Name</b></li>
+{% for user in user_list %}
+
+<li> 
+    {{ user.cellNum }} ||
+    {{ user.user.username }}
+
+</li>
+
+{% endfor %}
+</ul>
+<a href="/core/m">Return to main page</a>
+
+{% endblock %}
