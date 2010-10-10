@@ -108,8 +108,7 @@ def mobile_listincidents(request):
     beatUser = models.BeatUser.objects.get(user=request.user)
     beat = beatUser.cpdBeatIntersection
 
-    incidents = models.Incident.objects.filter(beatOccurence=beat).all()
-    incidents.sort(key=lambda x: x.voteTotal, rev = True)
+    incidents = models.Incident.objects.filter(beatOccurence=beat).order_by('-voteTotal')
 
     return render_to_response('list-incidents-mobile.html', {'incident_list' : incidents, 'beat' : beat})
 
