@@ -180,7 +180,7 @@ def mobile_vote(request):
     vote_currency_id = 0
     vote_balance = [c for c in balances if c['id'] == vote_currency_id][0]
 
-    incident.vote_total = vote_balance
+    incident.voteTotal = vote_balance
     incident.save()
 
     return HttpResponseRedirect('/core/m/list_incidents')
