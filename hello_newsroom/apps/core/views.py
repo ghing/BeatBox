@@ -109,6 +109,7 @@ def mobile_listincidents(request):
     beat = beatUser.cpdBeatIntersection
 
     incidents = models.Incident.objects.filter(beatOccurence=beat).all()
+    incidents.sort(key=lambda x: x.voteTotal, rev = True)
 
     return render_to_response('list-incidents-mobile.html', {'incident_list' : incidents, 'beat' : beat})
 
@@ -171,6 +172,8 @@ def mobile_incident_vote(request):
     incident_uid = request.GET['objid']
     incident = models.Incident.objects.get(objid=incident_uid)
 
+    app_key = 'e608258751c54fb4adba113c7998dc69'
+    secret_key = 'beec8efa9a014573b12e59498554b9c0'
     # create an instance of the bigdoor client
     c = Client(secret_key, app_key)
 
@@ -185,7 +188,7 @@ def mobile_incident_vote(request):
     balances = resp['end_user']['currency_balances']
 
     # this probably wants to be pulled from settings
-    vote_currency_id = 0
+    vote_currency_id = 1065 
     vote_balance = [c for c in balances if c['id'] == vote_currency_id][0]
 
     incident.voteTotal = vote_balance
