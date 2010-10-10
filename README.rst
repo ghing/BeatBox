@@ -1,4 +1,4 @@
-*About BeatBox*
+**About BeatBox**
 
 BeatBox is a mobile application to help neighborhood watch groups in cities like Chicago share information about public safety incidents.
 
