@@ -15,6 +15,7 @@ urlpatterns = patterns('',
     url(r'm/report', views.mobile_report),
     url(r'^m', views.mobile_index),
     url(r'^smshook', twilio),
+    url(r'^api/listbeats', views.api_listbeats),
     url(r'^admin', include(admin.site.urls)),
     url(r'', views.mobile_index,name="registersubmit")
 )
