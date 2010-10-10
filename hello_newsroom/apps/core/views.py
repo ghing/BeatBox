@@ -140,7 +140,7 @@ def mobile_incident(request):
         else:
             return render_to_response('user-screen.html', template_dict)
 
-def mobile_vote(request):
+def mobile_incident_vote(request):
     template_dict = {}
     if request.meethod != 'POST':
         return HttpResponseRedirect('/core/m')
