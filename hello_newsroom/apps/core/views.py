@@ -4,8 +4,9 @@ from django.shortcuts import render_to_response
 from django.contrib.gis.geos import *
 from django.contrib.gis.measure import Distance
 from django.contrib.gis.shortcuts import render_to_kml
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect
+from django.template import RequestContext
 
 from core import models
 from messaging import *
@@ -31,8 +32,10 @@ def mobile_index(request):
     if request.user.is_authenticated():
         return HttpResponseRedirect('/core/m/report')
     else:
-        print 'hello2'
         return render_to_response('user-screen.html', template_dict)
+def mobile_logout(request):
+    logout(request)
+    return HttpResponseRedirect('/core/m/')
 
 def mobile_login(request): 
     username = request.POST['username']
@@ -52,8 +55,7 @@ def mobile_login(request):
     
 def mobile_report(request):
     template_dict = {}
-    
-    return render_to_response('report-mobile.html', template_dict)
+    return render_to_response('report-mobile.html',template_dict,context_instance=RequestContext(request))
 
 def mobile_register(request):
     template_dict = {}

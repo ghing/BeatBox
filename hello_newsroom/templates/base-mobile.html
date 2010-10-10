@@ -60,7 +60,7 @@ maximum-scale = 1.0 retains dimensions instead of zooming in if page width < dev
 
 <!-- BEGIN HEADER -->
 <header>
-This is header
+this is a header
 </header>
 <!-- END HEADER -->
 
@@ -81,7 +81,15 @@ This is header
 
 <!-- BEGIN FOOTER -->
 <footer>
-This is footer
+{% if user.is_authenticated %}
+<form method="post" action="/core/m/logout">
+<input type="submit" class="btn" value="Log Out" />
+</form>
+{% else %}
+this is a footer
+{% endif %}
+
+
 </footer>
 <!-- END FOOTER -->
 
