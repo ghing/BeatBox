@@ -35,13 +35,14 @@
 <p class="user-name">{{ incident.reportedBy }}</p>
 <p class="incident-name">{{ incident.msg }}</p>
 <p class="notify"><a href="/core/m/notifybeat/?incident={{ incident.objid }}">Notify all users in beat</a></p>
-<p class="votes">Score: </a></p>
+<p class="votes">Score: {{ incident.voteTotal }}</a></p>
 </div>
 <!-- END DATA -->
 
 <!-- BEGIN VOTE -->
 <div id="incident-vote">
-<a href="#"><strong>Vote Here Fool!</strong></a>
+<a href="/core/m/incidentvote/objid={{ incident.objid }}&vote=1">Vote up</a>
+<a href="/core/m/incidentvote/objid={{ incident.objid }}&vote=-1">Vote down</a>
 </div>
 <!-- END VOTE -->
 </div>
