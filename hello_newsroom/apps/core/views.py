@@ -7,6 +7,7 @@ from django.contrib.gis.shortcuts import render_to_kml
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect
 from django.template import RequestContext
+from messaging.views import notify_admin
 
 from core import models
 from messaging import *
@@ -62,7 +63,6 @@ def mobile_register(request):
     if request.method != 'POST': 
         return render_to_response('register.html', template_dict)
     else:
-        template_dict = {}
         fUsername = request.POST.get('fUsername', '')
         fPass = request.POST.get('fPassword','')
         fBeatNum = request.POST.get('fBeatNum','')
@@ -74,3 +74,24 @@ def mobile_register(request):
         beatuser.save()
 
         return HttpResponseRedirect('/core/m')
+
+def mobile_incident(request):
+    if request.method != 'POST':
+        return HttpResponseRedirect('/core/m')
+    else:
+        if request.user.is_authenticated():
+            report = request.POST.get('fReport','')
+            beatuser = models.BeatUser.objects.get(user=request.user)
+            print beatuser.cpdBeatIntersection.beat_num
+            beatoccurence = models.CpdBeats.objects.get(beat_num=beatuser.cpdBeatIntersection.beat_num)
+            incident = models.Incident(reportedBy=beatuser, msg=report,beatOccurence=beatoccurence)
+            uid = incident.save()
+            return render_to_response('thankyou.html', {})
+        else:
+            return render_to_response('user-screen.html', template_dict)
+
+
+            
+
+        
+        

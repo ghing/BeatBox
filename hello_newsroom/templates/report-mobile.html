@@ -2,7 +2,7 @@
 
 {% block main %}
 <!-- BEGIN FORM -->
-<form method="post" action="">
+<form method="post" action="/core/m/incident">
 
 <!-- BEGIN OPTION MENU -->
 <p>
@@ -35,7 +35,7 @@
 <!-- BEGIN TEXT SUBMISSION -->
 <p>
 <label class="text">What should we know?</label>
-<textarea  class="body"/></textarea>
+<textarea name="fReport" class="body"/></textarea>
 </p>
 <!-- END TEXT SUBMISSION -->
 
@@ -45,8 +45,7 @@
 
 <input type="hidden" name="process" value="1"/>
 
-<a href="thankyou.html">
-<input type="submit" class="btn" value="Alert Coordinator" /></a>
+<input type="submit" class="btn" value="Alert Coordinator" />
 
 </form>
 <!-- END FORM -->
