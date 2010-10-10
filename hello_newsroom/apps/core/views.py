@@ -82,15 +82,15 @@ def mobile_incident(request):
         if request.user.is_authenticated():
             report = request.POST.get('fReport','')
             beatuser = models.BeatUser.objects.get(user=request.user)
-            print beatuser.cpdBeatIntersection.beat_num
             beatoccurence = models.CpdBeats.objects.get(beat_num=beatuser.cpdBeatIntersection.beat_num)
             incident = models.Incident(reportedBy=beatuser, msg=report,beatOccurence=beatoccurence)
             uid = incident.save()
+            notify_admin(incident)
             return render_to_response('thankyou.html', {})
         else:
             return render_to_response('user-screen.html', template_dict)
 
-
+   
             
 
         
