@@ -1,4 +1,5 @@
-**About BeatBox**
+About BeatBox
+=============
 
 BeatBox is a mobile application to help neighborhood watch groups in cities like Chicago share information about public safety incidents.  Users sign up as part of a beat_ and send alerts via SMS or mobile web.  A "beat leader" then receives the alert and can choose to forward it on to other users in the beat.
 
