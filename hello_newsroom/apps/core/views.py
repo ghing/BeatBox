@@ -19,13 +19,15 @@ def test_sms(request):
     
 
 def index(request):
-    template_dict = {}
-    beat = models.CpdBeats.objects.get(beat_num='2313')
-    thisuser = models.User.objects.create_user(username='john2', email='lennon@thebeatles.com', password='johnpassword')
-    beatuser = models.BeatUser(user=thisuser, cpdBeatIntersection=beat)
-    beatuser.save()
-    template_dict['beatuser'] = beatuser    
-    return render_to_response('core/index.html', template_dict)
+#    template_dict = {}
+#    beat = models.CpdBeats.objects.get(beat_num='2313')
+#    thisuser = models.User.objects.create_user(username='john2', email='lennon@thebeatles.com', password='johnpassword')
+#    beatuser = models.BeatUser(user=thisuser, cpdBeatIntersection=beat)
+#    beatuser.save()
+#    template_dict['beatuser'] = beatuser    
+#    return render_to_response('core/index.html', template_dict)
+    return HttpResponseRedirect('/core/m/')
+
 
 def mobile_index(request):
     template_dict = {}
@@ -34,6 +36,7 @@ def mobile_index(request):
         return HttpResponseRedirect('/core/m/report')
     else:
         return render_to_response('user-screen.html', template_dict)
+    
 def mobile_logout(request):
     logout(request)
     return HttpResponseRedirect('/core/m/')
